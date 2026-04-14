@@ -1,0 +1,227 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.png'); 
+    background-size: 100% 100%; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: rgba(0, 102, 204, 0.8);
+    padding: 10px 0;
+    width: 100%;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+margin:0 20px;
+}
+nav ul li a {
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    display: inline-block;
+    transition: 0.3s all ease;
+}
+nav ul li a:hover { 
+    color: rgba(255, 255, 0, 0.575)
+
+}
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero {
+    background-color: rgba(255, 255, 255, 0); 
+    padding: 40px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.01);
+}
+
+.hero h1 {
+    color: #003366;
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    white-space:nowrap;
+}
+.hero p {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height:1.6;
+}
+footer {
+    background-color: rgba(0, 102, 204, 0.8);
+    color: white;
+    padding: 8px 0; 
+    text-align: center;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+
+body.white-page {
+    background-image: none !important; 
+    background-color: rgba(245, 245, 245, 0.74) !important; 
+    color: black;
+}
+
+.courses-main {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.table-section {
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.table-section h2 {
+    color: rgb(65, 131, 223);
+    margin-bottom: 20px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th {
+    background-color: rgb(91, 183, 240);
+    color: white;
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
+table td {
+    padding: 15px;
+    border-bottom: 1px solid wheat;
+    font-size: 1rem;
+    color: black;
+}
+
+
+table tr:hover {
+    background-color:rgba(189, 233, 239, 0.975);
+    transition: 0.5s;
+}
+
+@media (max-width: 600px) {
+    table {
+        font-size: 0.8rem;
+    }
+}
+
+.main-flex-wrapper {
+    display: flex;             
+    align-items: stretch;      
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 1000px;         
+    margin: 40px auto;       
+    overflow: hidden;          
+}
+
+
+.form-container {
+    flex: 1.2;           
+    padding: 40px;
+    text-align: left;
+}
+
+.form-container h2 {
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;            
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.input-group input, 
+.input-group textarea {
+    width: 100%;          
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;    
+}
+
+
+.input-group input:hover, 
+.input-group textarea:hover {
+    border-color: #0066cc ;
+    background-color: #f9f9f9 ; 
+}
+
+
+.input-group input:focus, 
+.input-group textarea:focus {
+    outline: none; 
+    border-color: #004d99; 
+    box-shadow: 0 0 8px rgba(0, 102, 204, 0.2); 
+    background-color: #fff;
+}
+
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #004d99;
+}
+
+
+.image-container {
+    flex: 0.8;                 
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;        
+}
