@@ -226,20 +226,28 @@ table tr:hover {
     object-fit: cover;        
 }
 @media (max-width: 768px) {
-
-    nav ul {
-        flex-direction: column; 
-        text-align: center;
+    body {
+        zoom: 0.8; 
+    }
+    
+    .navbar, nav ul {
+        display: flex ;
+        flex-direction: row; 
+        justify-content: center;
+        width: 100% ;
     }
     img {
-        max-width: 100%;
-        height: auto;
+        width: 100% ;
+        height: auto ;
+        object-fit: contain ; 
     }
     table {
-        display: block;
-        overflow-x: auto; 
+        width: 100% ;
+        font-size: 0.7rem ; 
     }
-    input, textarea {
-        width: 100% !important;
+    footer {
+        width: 100% ;
+        position: relative ;
+        bottom: 0 ;
     }
 }
