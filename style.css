@@ -225,3 +225,21 @@ table tr:hover {
     height: 100%;
     object-fit: cover;        
 }
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column; 
+        text-align: center;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    table {
+        display: block;
+        overflow-x: auto; 
+    }
+    input, textarea {
+        width: 100% !important;
+    }
+}
