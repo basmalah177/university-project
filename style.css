@@ -272,7 +272,6 @@ table tr:hover {
         word-wrap: break-word;
         text-align: center;
     }
-
     .main-flex-wrapper {
         flex-direction: row !important; 
         width: 98% !important;
